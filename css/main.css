@@ -1,0 +1,35 @@
+:root {
+    --black: #000;
+    --grey: #7a7a7a;
+    --white: #fff;
+    --yt-red: #ff0033;
+}
+
+body {
+    min-width: 140px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    accent-color: var(--yt-red);
+    padding: 1em;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--white);
+        color: var(--black);
+    }
+}
